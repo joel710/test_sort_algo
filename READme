@@ -1,0 +1,39 @@
+
+
+### 📜 Fonction tri_insertion
+La fonction `tri_insertion` prend une liste en argument et effectue le tri par insertion sur cette liste. Voici comment cela fonctionne :
+
+- La boucle `for` parcourt chaque élément de la liste à partir du deuxième élément (index 1).
+- À chaque itération de la boucle, la variable `cle` contient la valeur de l'élément actuel à insérer.
+- La boucle `while` recherche la position appropriée pour insérer la clé dans la partie triée de la liste, en déplaçant les éléments plus grands d'une position vers la droite.
+- Une fois que la bonne position est trouvée, la clé est insérée à cet endroit.
+- La fonction renvoie la liste triée une fois que toutes les itérations sont terminées.
+
+ℹ️ **Complexité** :
+- Cet algorithme a une complexité temporelle de \(O(n^2)\) dans le pire des cas et de \(O(n)\) dans le meilleur des cas (lorsque la liste est déjà triée).
+- La complexité spatiale est de \(O(1)\), car l'algorithme effectue le tri en place sans utiliser d'espace supplémentaire proportionnel à la taille de la liste.
+
+###################################################################################################################
+l'algorithme QuickSort :
+
+### 🚀 Fonction quickSort
+La fonction `quickSort` prend une liste en argument et effectue le tri rapide (QuickSort) sur cette liste. Voici comment cela fonctionne :
+
+- Si la longueur de la liste est inférieure à 2, la fonction renvoie simplement la liste car une liste de 0 ou 1 élément est déjà triée.
+- Sinon, elle choisit le premier élément comme pivot.
+- Ensuite, elle partitionne la liste en deux parties : les éléments inférieurs ou égaux au pivot et les éléments supérieurs au pivot.
+- Elle récursivement applique l'algorithme `quickSort` aux deux sous-listes (partie gauche et partie droite).
+- Enfin, elle retourne la concaténation de la liste triée de gauche, du pivot et de la liste triée de droite.
+
+ℹ️ **Complexité** :
+- Cet algorithme a une complexité temporelle moyenne de \(O(n \log n)\), mais peut atteindre \(O(n^2)\) dans le pire des cas (lorsque le pivot est toujours le plus petit ou le plus grand élément).
+- La complexité spatiale est de \(O(\log n)\) dans le pire des cas pour le maintien de la pile d'appels récursifs.
+
+#### Exemple d'utilisation :
+```python
+ma_liste = [29, 10, 14, 37, 13]
+print("Liste non triée:", ma_liste)
+print("Liste triée:", quickSort(ma_liste))
+```
+
+Cette sortie affichera la liste non triée suivie de la liste triée à l'aide de la fonction `quickSort`.
